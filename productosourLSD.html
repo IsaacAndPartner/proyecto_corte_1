@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="Assets/Img/xxxxx.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Assets/css/estilosproductos.css">
+    <link rel="stylesheet" href="footer/Assets/CSS/Style.css">
+    <title>WTF!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+
+    <header class="pt-3 column fixed-top justify-content-evenly" style="background-color: transparent;">
+
+        <h1>Tienda</h1>
+
+
+        <a class="nav-link" href="index.html"><i class="fa-sharp fa-solid fa-book-atlas" style="color: #207457;"></i>
+            Inicio</a>
+
+        <a class="nav-link" href="Login/Loginproyecto.html"><i class="fa-sharp fa-solid fa-book-atlas" style="color: #207457;"></i>
+            Login</a>
+
+        <a class="nav-link" href="registro/assets/registro.html"> <i class="fa-solid fa-fire" style="color: #207457;"></i>Regístrate</a>
+
+        <div class="container-icon">
+            <div class="container-cart-icon">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+            <div class="container-cart-products hidden-cart">
+                <div class="cart-product">
+                    <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Sour LSD</p>
+                        <span class="precio-producto-carrito">$64 USD</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="icon-close">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$64</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- carrusel -->
+
+    <section class="d-none d-md-block">
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner estiloCarru">
+                <div class="carousel-item ">
+                    <img src="assets/img/sourLSD/pexels-rodnae-productions-8140311.jpg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item active">
+                    <img src="assets/img/sourLSD/hol.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/sourLSD/pexels-daniel-friday-danzor-3032153.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="carousel-caption col-lg-3 col-md-4 col-xl-3 estiloCarru">
+            <div class="item mt-5">
+                <h1 id="carousel-text">
+                    Sour LSD
+                </h1>
+                <h2 class="row ">
+                    $65 USD
+                </h2>
+                <h4 class="row ">
+                    Cantidad
+                </h4>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <button class="btn " onclick="restar()">
+                            <i class="fa-sharp fa-solid fa-minus" style="color: #000000;">
+                            </i>
+                        </button>
+                    </span>
+                    <input type="text" class="form-control" id="inputValor" value="0">
+                    <span class="input-group-text">
+                        <button class="btn " onclick="sumar()">
+                            <i class="fa-sharp fa-solid fa-plus" style="color: #000000;">
+                            </i>
+                        </button>
+                    </span>
+                </div>
+                <button class="btn-add-cart btn btn-dark m-2  col-12">
+                    <i class="fa-sharp fa-solid fa-cart-shopping fa-xs" style="color:#ffffff;">
+                    </i>
+                    Incluir al carrito
+                </button>
+                <p class="row">
+                    Consulta esta y todas nuestras otras promociones en nuestro apartado de carta.
+                </p>
+            </div>
+
+        </div>
+
+        </div>
+
+
+        <div class="listaProductos p-5">
+
+            <div
+                class="Col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center align-items-center titularProductos">
+                <h1>
+                    Otros Productos
+                </h1>
+            </div>
+
+            <section
+                class="mt-5 align-items-center justify-content-around justify-content-between d-md-flex d-lg-flex d-xl-flex d-block container">
+
+                <div class="card  col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr1 mx-1 mt-5">
+                    <div class="imgBx">
+                        <img src="assets/img/royalMedik/grow2.png" alt="">
+                    </div>
+                    <div class="contentBx">
+                        <h3>Royal Medic</h3>
+                        <h2 class="price"> $65<small> USD</small> </h2>
+                        <a class="buy" href="productoRoyal.html">BUY</a>
+                    </div>
+                </div>
+
+                <div class="card  col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr2 mx-1 mt-5">
+                    <div class="imgBx">
+                        <img src="assets/img/royalMedik/grow2.png" alt="">
+                    </div>
+                    <div class="contentBx">
+                        <h3>Hells OG</h3>
+                        <h2 class="price"> $65<small> USD</small> </h2>
+                        <a class="buy" href="productohellsOG.html">BUY</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr3 mx-1 mt-5">
+                    <div class="imgBx">
+                        <img src="assets/img/royalMedik/grow2.png" alt="">
+                    </div>
+                    <div class="contentBx">
+                        <h3>Sour LSD</h3>
+                        <h2 class="price"> $65<small> USD</small> </h2>
+                        <a class="buy" href="productosourLSD.html">BUY</a>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+    <section class="d-block d-md-none">
+
+        <div id="carouselExampleCaptions2" class="carousel slide">
+            <div class="carousel-inner estiloCarru">
+                <div class="carousel-item active">
+                    <img src="assets/img/sourLSD/hol.jpg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="assets/img/sourLSD/pexels-daniel-friday-danzor-3032153.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/sourLSD/pexels-rodnae-productions-8140274.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="carousel-caption align-items-center justify-content-center estiloCarru">
+
+            <div class="container-text d-grid mt-5">
+                <h1 id="carousel-text">
+                    Sour LSD
+                </h1>
+                <h2 class="col-4">
+                    $65 USD
+                </h2>
+            </div>
+        </div>
+
+        <div class="m-0 p-5" style="background-color:#CDDCE0;">
+
+            <div class="d-flex flex-column">
+                <h4>
+                    Cantidad
+                </h4>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <button class="btn " onclick="restar()">
+                            <i class="fa-sharp fa-solid fa-minus" style="color: #000000;">
+                            </i>
+                        </button>
+                    </span>
+                    <input type="text" class="form-control" id="inputValor" value="0">
+                    <span class="input-group-text">
+                        <button class="btn " onclick="sumar()">
+                            <i class="fa-sharp fa-solid fa-plus" style="color: #000000;">
+                            </i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <button class="btn btn-block btn-dark m-2">
+                <i class="fa-sharp fa-solid fa-cart-shopping fa-xs" style="color:#ffffff;"> OUT OF
+                    STOCK</i>
+            </button>
+            <p class="d-flex">
+                Consulta esta y todas nuestras otras promociones en nuestro apartado de carta.
+            </p>
+        </div>
+
+        <div class="listaProductos p-5">
+            <div
+                class="Col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center align-items-center titularProductos">
+                <h1>
+                    Otros Productos
+                </h1>
+            </div>
+
+            <div class="card  col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr1 mx-5 mt-5">
+                <div class="imgBx">
+                    <img src="assets/img/royalMedik/grow2.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <h3>Royal Medic</h3>
+                    <h2 class="price"> $65<small> USD</small> </h2>
+                    <a class="buy" href="productoRoyal.html">BUY</a>
+                </div>
+            </div>
+
+            <div class="card  col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr2 mx-5 mt-5">
+                <div class="imgBx">
+                    <img src="assets/img/royalMedik/grow2.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <h3>Hells OG</h3>
+                    <h2 class="price"> $65<small> USD</small> </h2>
+                    <a class="buy" href="productohellsOG.html">BUY</a>
+                </div>
+            </div>
+
+            <div class="card col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr3 mx-5 mt-5">
+                <div class="imgBx">
+                    <img src="assets/img/royalMedik/grow2.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <h3>Sour LSD</h3>
+                    <h2 class="price"> $65<small> USD</small> </h2>
+                    <a class="buy" href="productosourLSD.html">BUY</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!--  General Footer -->
+
+    <footer id="bg-pan-left" class="footeR d-flex justify-content-center w-100 col-sm-15 col-md-15 bg-body">
+
+        <!-- Columns Section -->
+
+        <section id="holA" class=" d-sm-flex d-md-flex justify-content-center text-center col-lg-10 h-100 p-0">
+
+            <!-- Bulletin Section -->
+
+            <div id="threeCols" class="col-sm-8 col-lg-11 d-flex justify-content-center  w-100 h-75 ">
+                <div id="style_C0l"
+                    class=" col-md-7 col-lg-5 h-100 w-25 d-md-none d-lg-flex justify-content-start flex-column align-items-center">
+                    <label id="exampleFormControlInput1" class="form-label">
+                        <h1 id="exampleFormControlInput1" class=" mt-4 text-white font-weight-bold mb-4  fa-solid">
+                            Suscribete a nuestro boletin</h1>
+                    </label>
+
+                    <!-- Email Addresses Options -->
+
+                    <form class=" input-group flex-wrap justify-content-center">
+
+                        <p id="t3xT_3mail"
+                            class=" text-white font-weight-bold border border-white mb-4 text-center p-2 rounded-circle  col-5 ">
+                            Ingrese su correo aqui:</p>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="txtCorreo" placeholder="Your Email" required>
+                            <select id="basic-addon2" class="border-0 bg-dark text-white">
+                                <option class="input-group-text bg-warning font-weight-bold " id="basic-addon2">
+                                    @Gmail.com</option>
+                                <option class="input-group-text bg-warning font-weight-bold " id="basic-addon2">
+                                    @Yahoo.com</option>
+                                <option class="input-group-text bg-warning font-weight-bold" id="basic-addon2">
+                                    @Outlook.com</option>
+                            </select>
+                        </div>
+
+                        <!-- Suscribe Button -->
+
+                        <button type="button" class="btn btn-dark  border text-white font-weight-bold "
+                            onclick="contacto()">Suscribete
+                        </button>
+
+                </div>
+                </form>
+
+
+
+                <!-- Social Media Section -->
+
+                <div id="styleCol" class="col-sm-10 col-md-10 col-lg-6 d-flex justify-content-center h-100">
+                    <ul id="bOx"
+                        class="col-sm-10  col-md-7 col-lg-8 row d-md-flex d-sm-flex justify-content-center justify-content-sm-between justify-content-md-evenly list-unstyled align-self-center flex-row mb-0 h-75">
+                        <li class="col-5 h-25 p-0 text-center"><a id="redesSoc"
+                                class="d-flex justify-content-center flex-column" href="https://www.facebook.com/"><i
+                                    class="fa-brands fa-square-facebook  justify-content-center align-self-center"
+                                    style="color:  #ffffff;;"></i></a></li>
+
+                        <li class="col-5 h-25 p-0"><a id="redesSoc" class="d-flex justify-content-center flex-column "
+                                href="https://www.instagram.com/"><i
+                                    class="fs-2 fa-brands fa-instagram  justify-content-center align-self-center"
+                                    style="color:  #ffffff;;"></i></a></li>
+
+                        <li class="col-5 h-25 p-0"><a id="redesSoc" class=" d-flex justify-content-center flex-column"
+                                href=" https://web.whatsapp.com/"><i
+                                    class="fa-brands fa-whatsapp justify-content-center align-self-center"
+                                    style="color: #ffffff;"></i></a></li>
+
+                        <li class="col-5 h-25 p-0"><a id="redesSoc" class=" d-flex justify-content-center flex-column"
+                                href="https://web.telegram.org/"><i
+                                    class="fa-brands fa-telegram  justify-content-center align-self-center"
+                                    style="color: #ffffff;"></i></a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Contact Us Section-->
+                <form id="style_C0l"
+                    class=" col-md-6 col-lg-4 h-100 d-sm-none d-md-none d-lg-flex  justify-content-center">
+                    <div id="bOx"
+                        class="  d-flex justify-content-start flex-column col-md-12 h-100 align-items-center mt-5">
+                        <div id="t1tl3" class="h-25 mb-5  d-flex justify-content-center align-items-center">
+                            <p class="fa-solid text-center mb-0 "> ¿Tienes alguna duda, mensaje o sugerencia?</p>
+                        </div>
+                        <button id="buttOn_1" type="button"
+                            class="btn btn-primary mt-2 w-75 h-25 bg-dark font-weight-bold btn-outline-none"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@getbootstrap">Contáctanos</button>
+                    </div>
+
+
+                    <!-- Form Suggestions  -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Nuevo Mensaje</h5>
+                                    <button type="button" class="btn-close h-25 border-0 bg-transparent"
+                                        data-bs-dismiss="modal" aria-label="Close"><i class="fa-thin fa-x fa-italic "
+                                            style="color: #000000;"></i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Recipiente:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Mensaje:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="submit" data-bs-toggle="" class="btn btn-primary">Enviar</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            </form>
+            </div>
+            </div>
+            </div>
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function contacto() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Gracias por suscribirte!',
+            })
+            document.querySelector("#txtCorreo").value = ""
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+        </script>
+    <script src="Assets/js/index.js"></script>
+    <script>
+        function restar() {
+            let cantidadActual = document.querySelector("#inputValor")
+            cantidadActual.value = parseInt(cantidadActual.value) - 1
+        }
+        function sumar() {
+            let cantidadActual = document.querySelector("#inputValor")
+            cantidadActual.value = parseInt(cantidadActual.value) + 1
+        }
+    </script>
+</body>
+
+</html>

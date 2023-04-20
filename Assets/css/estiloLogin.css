@@ -1,0 +1,30 @@
+:root {
+    --color-verde: #B4D3B2;
+    ;
+}
+
+body {
+  
+    background: linear-gradient(to right, #B4D3B2, #70e6e0);
+}
+
+.alto-pantalla {
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.fondo-verde {
+    background-color: var(--color-verde);
+}
+
+.icono-form {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-custom {
+    background-color: var(--color-verde);
+}

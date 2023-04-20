@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="Assets/Img/xxxxx.ico">
+	<title>WTF!</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="Assets/css/estilosproductos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body class="scroll">
+	<header class="pt-3 column fixed-top justify-content-evenly" style="background-color:transparent; color: #a3199c;">
+
+		<a href="#Inicio"><img src="Assets/Img/xxxxx.png" alt="" href="#Inicio"></a>
+
+		<a class="nav-link" href="Login/Loginproyecto.html"><i class="fa-sharp fa-solid fa-book-atlas" style="color: #207457;"></i>
+			Login</a>
+
+		<a class="nav-link" href="#llamarProductos"><i class="fa-sharp fa-solid fa-book-atlas" style="color: #207457;"></i>
+			Productos</a>
+
+
+		<a class="nav-link" href="registro/assets/registro.html"> <i class="fa-solid fa-fire" style="color: #207457;"></i> Regístrate</a>
+
+		<div class="container-icon">
+			<div class="container-cart-icon">
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+					stroke="currentColor" class="icon-cart">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+			</div>
+			<div class="container-cart-products hidden-cart">
+				<div class="cart-product">
+					<div class="info-cart-product">
+						<span class="cantidad-producto-carrito">1</span>
+						<p class="titulo-producto-carrito">Hells OG</p>
+						<span class="precio-producto-carrito">$64 USD</span>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="icon-close">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</div>
+				<div class="cart-total">
+					<h3>Total:</h3>
+					<span class="total-pagar">$64</span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="no-parallax" id="Inicio">
+			<div class="Img1">
+				<img class="Img1" src="Assets/Img/logoo.png">
+			</div>
+		</section>
+
+		<section class=" parallax bg fix-p" >
+			<div>
+				<img class="Img2 d-none d-md-block" src="Assets/Img/Img logo seguna pagina productos-PhotoRoom.png-PhotoRoom.png" alt="">
+			</div>
+			<h1> La marihuana tiene propiedades medicinales que han sido reconocidas por la comunidad médica. El THC
+				tiene propiedades analgésicas y antiinflamatorias, lo que lo convierte en un tratamiento eficaz para
+				el dolor crónico. La marihuana también es efectiva en el tratamiento de la ansiedad, el insomnio, el
+				cáncer y la epilepsia. Sin embargo, su uso con fines medicinales debe ser supervisado por un médico
+				calificado, y es importante reconocer que sigue siendo una sustancia controlada en muchos países. En
+				resumen, la marihuana puede tener beneficios medicinales importantes, pero su uso debe ser regulado
+				y controlado por profesionales médicos.</h1>
+		</section>
+
+		<section class="no-parallax">
+			<div class="d-none d-md-block">
+				<img id="Imagen" src="Assets/Img/Imagen logo-PhotoRoom.png-PhotoRoom.png" alt="">
+			</div>
+			<div class="Boton">
+				<a class="Botonc" href="#llamarProductos" style="--clr:#a3199c;--i:2;"> <span> Productos </span></a>
+			</div>
+		</section>
+
+
+		<section class="parallax bg fix-p" style="height: 150vh !important;">
+			<h1 style="transform: translateY(-126px);"> Para los indígenas, el cultivo de marihuana no solo es una forma de subsistencia, sino también un acto
+				de reverencia hacia la madre tierra. Los conocimientos ancestrales que han sido transmitidos a lo largo
+				de los siglos, han permitido a estas comunidades cultivar la planta con respeto y sabiduría, en armonía
+				con la naturaleza.
+
+				El cultivo de marihuana por indígenas se lleva a cabo con métodos tradicionales y ecológicos, evitando
+				el uso de pesticidas y fertilizantes químicos. En cambio, se utilizan técnicas naturales, como el
+				compostaje y la rotación de cultivos, que promueven la biodiversidad y protegen la salud del suelo y de
+				las plantas.
+
+				Para los indígenas, la marihuana es mucho más que una planta para el consumo. Es considerada una
+				medicina sagrada que tiene propiedades curativas y espirituales. Se utiliza en ceremonias rituales, en
+				prácticas de sanación y como medio de conexión con lo divino y lo ancestral. </h1>
+		</section>
+
+		<section class="parallax bg fix-p">
+
+			<div>
+				<img id="Imagen2" src="Assets/Img/indigenas-1-e1560103583929-PhotoRoom.png-PhotoRoom (1).png" alt="">
+			</div>
+			<h1 class="d-none d-md-block">
+
+				En conclusión, el cultivo de marihuana por indígenas es una práctica arraigada en la sabiduría
+				ancestral, que va más allá de la simple agricultura. Es una forma de vida, una conexión profunda con la
+				tierra y una manifestación de la identidad cultural de estas comunidades. Reconocer, respetar y
+				preservar esta sabiduría es esencial para honrar la riqueza cultural y espiritual asociada con el
+				cultivo de la marihuana por indígenas. </h1>
+		</section>
+
+		<style>
+			body {
+				overflow-x: hidden !important;
+				background-color: #000;
+			}
+
+			.footerEpilepsico {
+				position: absolute;
+				z-index: 99;
+				width: 100%;
+				height: 500px;
+			}
+		</style>
+
+
+		<div style="margin-top: 300px;" class="bg-dark d-none d-md-block" id="llamarProductos">
+			
+
+			<div class="listaProductos p-5">
+
+				<div
+					class="Col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center align-items-center titularProductos">
+					<h1>
+						Otros Productos
+					</h1>
+				</div>
+	
+				<section
+					class="mt-5 align-items-center justify-content-around justify-content-between d-md-flex d-lg-flex d-xl-flex d-block container">
+	
+					<div class="card  col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr1 mx-1 mt-5">
+						<div class="imgBx">
+							<img src="assets/img/royalMedik/grow2.png" alt="">
+						</div>
+						<div class="contentBx">
+							<h3>Royal Medic</h3>
+							<h2 class="price"> $65<small> USD</small> </h2>
+							<a class="buy" href="productoRoyal.html">BUY</a>
+						</div>
+					</div>
+	
+					<div class="card  col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr2 mx-1 mt-5">
+						<div class="imgBx">
+							<img src="assets/img/royalMedik/grow2.png" alt="">
+						</div>
+						<div class="contentBx">
+							<h3>Hells OG</h3>
+							<h2 class="price"> $65<small> USD</small> </h2>
+							<a class="buy" href="productohellsOG.html">BUY</a>
+						</div>
+					</div>
+	
+					<div class="card col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr3 mx-1 mt-5">
+						<div class="imgBx">
+							<img src="assets/img/royalMedik/grow2.png" alt="">
+						</div>
+						<div class="contentBx">
+							<h3>Sour LSD</h3>
+							<h2 class="price"> $65<small> USD</small> </h2>
+							<a class="buy" href="productosourLSD.html">BUY</a>
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		<section class="d-block d-md-none" style="width: 100%; height:1500px;">
+			<div class="listaProductos p-5">
+				<div
+					class="Col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center align-items-center titularProductos">
+					<h1>
+						Otros Productos
+					</h1>
+				</div>
+	
+				<div class="card  col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr1 mx-5 mt-5">
+					<div class="imgBx">
+						<img src="assets/img/royalMedik/grow2.png" alt="">
+					</div>
+					<div class="contentBx">
+						<h3>Royal Medic</h3>
+						<h2 class="price"> $65<small> USD</small> </h2>
+						<a class="buy">BUY</a>
+					</div>
+				</div>
+	
+				<div class="card  col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr2 mx-5 mt-5">
+					<div class="imgBx">
+						<img src="assets/img/royalMedik/grow2.png" alt="">
+					</div>
+					<div class="contentBx">
+						<h3>Hells OG</h3>
+						<h2 class="price"> $65<small> USD</small> </h2>
+						<a class="buy">BUY</a>
+					</div>
+				</div>
+	
+				<div class="card col-sm-7 col-md-6 col-lg-3 col-xl-3 cardBgr3 mx-5 mt-5">
+					<div class="imgBx">
+						<img src="assets/img/royalMedik/grow2.png" alt="">
+					</div>
+					<div class="contentBx">
+						<h3>Sour LSD</h3>
+						<h2 class="price"> $65<small> USD</small> </h2>
+						<a class="buy">BUY</a>
+					</div>
+				</div>
+			</div>
+	
+    </section>
+	
+		<div>
+			<iframe class="footerEpilepsico" src="footer/Index.html" frameborder="0"></iframe>
+		</div>
+	</main>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
+	<script src="assets/js/index.js"></script>
+	<script>
+		function restar() {
+			let cantidadActual = document.querySelector("#inputValor")
+			cantidadActual.value = parseInt(cantidadActual.value) - 1
+		}
+		function sumar() {
+			let cantidadActual = document.querySelector("#inputValor")
+			cantidadActual.value = parseInt(cantidadActual.value) + 1
+		}
+	</script>
+</body>
+
+</html>

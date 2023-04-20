@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/CSS/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+
+
+    <!--  General Footer -->
+
+    <footer id="bg-pan-left" class="footeR d-flex justify-content-center w-100 col-sm-15 col-md-15 bg-body">
+
+        <!-- Columns Section -->
+
+        <section id="holA" class=" d-sm-flex d-md-flex justify-content-center text-center col-lg-10 h-100 p-0">
+
+            <!-- Bulletin Section -->
+
+            <div id="threeCols" class="col-sm-8 col-lg-11 d-flex justify-content-center  w-100 h-75 ">
+                <div id="style_C0l"
+                    class=" col-md-7 col-lg-5 h-100 w-25 d-md-none d-lg-flex justify-content-start flex-column align-items-center">
+                    <label id="exampleFormControlInput1" class="form-label">
+                        <h1 id="exampleFormControlInput1" class=" mt-4 text-white font-weight-bold mb-4  fa-solid">
+                            Suscribete a nuestro boletin</h1>
+                    </label>
+
+                    <!-- Email Addresses Options -->
+
+                    <form class=" input-group flex-wrap justify-content-center">
+
+                        <p id="t3xT_3mail"
+                            class=" text-white font-weight-bold border border-white mb-4 text-center p-2 rounded-circle  col-5 ">
+                            Ingrese su correo aqui:</p>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="txtCorreo" placeholder="Your Email" required>
+                            <select id="basic-addon2" class="border-0 bg-dark text-white">
+                                <option class="input-group-text bg-warning font-weight-bold " id="basic-addon2">
+                                    @Gmail.com</option>
+                                <option class="input-group-text bg-warning font-weight-bold " id="basic-addon2">
+                                    @Yahoo.com</option>
+                                <option class="input-group-text bg-warning font-weight-bold" id="basic-addon2">
+                                    @Outlook.com</option>
+                            </select>
+                        </div>
+
+                        <!-- Suscribe Button -->
+
+                        <button type="button" class="btn btn-dark  border text-white font-weight-bold "
+                            onclick="contacto()">Suscribete
+                        </button>
+
+                </div>
+                </form>
+
+
+
+                <!-- Social Media Section -->
+
+                <div id="styleCol" class="col-sm-10 col-md-10 col-lg-6 d-flex justify-content-center h-100">
+                    <ul id="bOx"
+                        class="col-sm-10  col-md-7 col-lg-8 row d-md-flex d-sm-flex justify-content-center justify-content-sm-between justify-content-md-evenly list-unstyled align-self-center flex-row mb-0 h-75">
+                        <li class="col-5 h-25 p-0 text-center"><a id="redesSoc"
+                                class="d-flex justify-content-center flex-column" href="https://www.facebook.com/"><i
+                                    class="fa-brands fa-square-facebook  justify-content-center align-self-center"
+                                    style="color:  #ffffff;;"></i></a></li>
+
+                        <li class="col-5 h-25 p-0"><a id="redesSoc" class="d-flex justify-content-center flex-column "
+                                href="https://www.instagram.com/"><i
+                                    class="fs-2 fa-brands fa-instagram  justify-content-center align-self-center"
+                                    style="color:  #ffffff;;"></i></a></li>
+
+                        <li class="col-5 h-25 p-0"><a id="redesSoc" class=" d-flex justify-content-center flex-column"
+                                href=" https://web.whatsapp.com/"><i
+                                    class="fa-brands fa-whatsapp justify-content-center align-self-center"
+                                    style="color: #ffffff;"></i></a></li>
+
+                        <li class="col-5 h-25 p-0"><a id="redesSoc" class=" d-flex justify-content-center flex-column"
+                                href="https://web.telegram.org/"><i
+                                    class="fa-brands fa-telegram  justify-content-center align-self-center"
+                                    style="color: #ffffff;"></i></a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Contact Us Section-->
+                <form id="style_C0l"
+                    class=" col-md-6 col-lg-4 h-100 d-sm-none d-md-none d-lg-flex  justify-content-center">
+                    <div id="bOx"
+                        class="  d-flex justify-content-start flex-column col-md-12 h-100 align-items-center mt-5">
+                        <div id="t1tl3" class="h-25 mb-5  d-flex justify-content-center align-items-center">
+                            <p class="fa-solid text-center mb-0 "> ¿Tienes alguna duda, mensaje o sugerencia?</p>
+                        </div>
+                        <button id="buttOn_1" type="button"
+                            class="btn btn-primary mt-2 w-75 h-25 bg-dark font-weight-bold btn-outline-none"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@getbootstrap">Contáctanos</button>
+                    </div>
+
+
+                    <!-- Form Suggestions  -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Nuevo Mensaje</h5>
+                                    <button type="button" class="btn-close h-25 border-0 bg-transparent"
+                                        data-bs-dismiss="modal" aria-label="Close"><i class="fa-thin fa-x fa-italic "
+                                            style="color: #000000;"></i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Recipiente:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Mensaje:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="submit" data-bs-toggle="" class="btn btn-primary">Enviar</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            </form>
+            </div>
+            </div>
+            </div>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function contacto() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Gracias por suscribirte!',
+            })
+            document.querySelector("#txtCorreo").value = ""
+        }
+    </script>
+
+</body>
+
+</html>
